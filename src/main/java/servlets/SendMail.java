@@ -48,8 +48,8 @@ public class SendMail extends HttpServlet {
 	
 	public static void sendthemail(String toaddr,String choosen) {
 			String to=toaddr;
-		  final String user="covidreportdata@gmail.com";
-		  final String password="gotohell13!!";
+		  final String user="youremail";
+		  final String password="yourpassword";
 		   
 		  //1) get the session object     
 		  Properties properties = System.getProperties();  

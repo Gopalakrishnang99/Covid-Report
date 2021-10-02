@@ -88,8 +88,8 @@ public class RegistrationServlet extends HttpServlet {
 	public void sendmail(String emailid,String otp) {
 		
 		String host="smtp.gmail.com";  
-		  final String user="covidreportdata@gmail.com";
-		  final String password="gotohell13!!";
+		  final String user="youremail";
+		  final String password="yourpassword";
 		  String to=emailid;
 		  
 		  Properties properties = System.getProperties();  
