@@ -1,0 +1,84 @@
+/*
+Error: Invalid CSS after "...h $position in ": expected expression (e.g. 1px, bold), was "['left', 'botto..."
+        on line 1 of utilities/_border.scss
+        from line 5 of _utilities.scss
+        from line 10 of sb-admin-2.scss
+
+1: @each $color, $value in $theme-colors  { @each $position in ['left', 'bottom']  .border-#{$position}-#{$color}     border-#{$position}: .25rem solid $value !important;
+2:     }
+
+Backtrace:
+utilities/_border.scss:1
+_utilities.scss:5
+sb-admin-2.scss:10
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/script/lexer.rb:229:in `expected!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/script/parser.rb:710:in `assert_expr'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/script/parser.rb:75:in `parse'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1063:in `sass_script'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:304:in `each_directive'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:222:in `special_directive'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:197:in `directive'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:307:in `each_directive'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:222:in `special_directive'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:197:in `directive'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Ruby26-x64/bin/sass:23:in `load'
+C:/Ruby26-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...h $position in \": expected expression (e.g. 1px, bold), was \"['left', 'botto...\"\A         on line 1 of utilities/_border.scss\A         from line 5 of _utilities.scss\A         from line 10 of sb-admin-2.scss\A \A 1: @each $color, $value in $theme-colors  { @each $position in ['left', 'bottom']  .border-#{$position}-#{$color}     border-#{$position}: .25rem solid $value !important;\A 2:     }"; }
